@@ -1,9 +1,0 @@
-@import 'mixins.scss';
-
-.flexbox-class{ @include flexbox(); }
-.flex-wrap{ @include flex-wrap(wrap); }
-.flex{ @include flex(0 0 auto); }
-.justify-content{ @include justify-content(flex-start); }
-.align-content{ @include align-content(flex-start); }
-.align-items{ @include align-items(flex-start); }
-.align-self{ @include align-self(flex-start); }
