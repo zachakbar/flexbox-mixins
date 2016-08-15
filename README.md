@@ -2,8 +2,6 @@
 These mixins include the broswer specific fallbacks for flexbox.
 
 <strong>Flexbox</strong>
-<hr>
-<pre>.flexbox-class{ @include flexbox(); }</pre>
 <pre>
 // no value needed
 
@@ -15,6 +13,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 	display: flex;
 }
 </pre>
+<pre>.flexbox-class{ @include flexbox(); }</pre>
 
 <strong>Flex Wrap</strong>
 <pre>
@@ -27,9 +26,8 @@ $value: nowrap | wrap | wrap-reverse
 	-ms-flex-wrap: $value;
 	flex-wrap: $value;
 }
-
-.flex-wrap{ @include flex-wrap(wrap); }
 </pre>
+<pre>.flex-wrap{ @include flex-wrap(wrap); }</pre>
 
 <strong>Flex</strong>
 <pre>
@@ -42,9 +40,8 @@ $value: nowrap | wrap | wrap-reverse
 	-ms-flex:  $values;
 	flex:  $values;
 }
-
-.flex{ @include flex(0 0 auto); }
 </pre>
+<pre>.flex{ @include flex(0 0 auto); }</pre>
 
 <strong>Justify Content</strong>
 <pre>
@@ -83,9 +80,8 @@ $value: flex-start | flex-end | center | space-between | space-around
 		justify-content: $value;
 	}
 }
-
-.justify-content{ @include justify-content(flex-start); }
 </pre>
+<pre>.justify-content{ @include justify-content(flex-start); }</pre>
 
 <strong>Align Content</strong>
 <pre>
@@ -143,9 +139,8 @@ $value: flex-start | flex-end | center | baseline | stretch
 		align-items: $value;
 	}
 }
-
-.align-items{ @include align-items(flex-start); }
 </pre>
+<pre>.align-items{ @include align-items(flex-start); }</pre>
 
 <strong>Align Self</strong>
 <pre>
@@ -166,6 +161,5 @@ $value: auto | flex-start | flex-end | center | baseline | stretch
 		align-self: $value;
 	}
 }
-
-.align-self{ @include align-self(flex-start); }
 </pre>
+<pre>.align-self{ @include align-self(flex-start); }</pre>
