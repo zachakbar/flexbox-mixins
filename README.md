@@ -1,34 +1,47 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
-
-// FLEXBOX MIXINS
+<hr>
+<pre>
+// no value needed
 @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 }
+</pre>
 
-// nowrap | wrap | wrap-reverse
+<strong>Flex Wrap</strong>
+<pre>
+$value: nowrap | wrap | wrap-reverse
+
 @mixin flex-wrap($value){
-  -webkit-box-flex-wrap: $value;
-  -moz-box-flex-wrap: $value;
-  -webkit-flex-wrap: $value;
-  -ms-flex-wrap: $value;
-  flex-wrap: $value;
+	-webkit-box-flex-wrap: $value;
+	-moz-box-flex-wrap: $value;
+	-webkit-flex-wrap: $value;
+	-ms-flex-wrap: $value;
+	flex-wrap: $value;
 }
+</pre>
 
+<strong>Flex</strong>
+<pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
-@mixin flex($values){
-  -webkit-box-flex: $values;
-  -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
-}
 
-// flex-start | flex-end | center | space-between | space-around
+@mixin flex($values){
+	-webkit-box-flex: $values;
+	-moz-box-flex:  $values;
+	-webkit-flex:  $values;
+	-ms-flex:  $values;
+	flex:  $values;
+}
+</pre>
+
+<strong>Justify Content</strong>
+<pre>
+$value: flex-start | flex-end | center | space-between | space-around
+
 @mixin justify-content($value) {
 	@if $value == 'flex-start'{
 		-webkit-box-pack: start;
@@ -62,8 +75,12 @@ These mixins include the broswer specific fallbacks for flexbox.
 		justify-content: $value;
 	}
 }
+</pre>
 
-// flex-start | flex-end | center | space-between | space-around | stretch
+<strong>Align Content</strong>
+<pre>
+$value: flex-start | flex-end | center | space-between | space-around | stretch
+
 @mixin align-content($value){
 	@if $value == 'flex-start'{
 		-webkit-align-content: $value;
@@ -87,51 +104,52 @@ These mixins include the broswer specific fallbacks for flexbox.
 		align-content: $value;
 	}
 }
+</pre>
 
 <strong>Align Items</strong>
 <pre>
-	$value: flex-start | flex-end | center | baseline | stretch
-	
-	@mixin align-items($value){
-		@if $value == 'flex-start'{
-			-webkit-box-align: start;
-			-moz-box-align: start;
-			-webkit-align-items: $value;
-			-ms-flex-align: start;
-			align-items: $value;
-		}@else if $value == 'flex-end'{
-			-webkit-box-align: end;
-			-moz-box-align: end;
-			-webkit-align-items: $value;
-			-ms-flex-align: end;
-			align-items: $value;
-		}@else{
-			-webkit-box-align: $value;
-			-moz-box-align: $value;
-			-webkit-align-items: $value;
-			-ms-flex-align: $value;
-			align-items: $value;
-		}
+$value: flex-start | flex-end | center | baseline | stretch
+
+@mixin align-items($value){
+	@if $value == 'flex-start'{
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-webkit-align-items: $value;
+		-ms-flex-align: start;
+		align-items: $value;
+	}@else if $value == 'flex-end'{
+		-webkit-box-align: end;
+		-moz-box-align: end;
+		-webkit-align-items: $value;
+		-ms-flex-align: end;
+		align-items: $value;
+	}@else{
+		-webkit-box-align: $value;
+		-moz-box-align: $value;
+		-webkit-align-items: $value;
+		-ms-flex-align: $value;
+		align-items: $value;
 	}
+}
 </pre>
 
 <strong>Align Self</strong>
 <pre>
-	$value: auto | flex-start | flex-end | center | baseline | stretch
+$value: auto | flex-start | flex-end | center | baseline | stretch
 	
-	@mixin align-self($value){
-	  @if $value == 'flex-start'{
-	  	-webkit-align-self: $value;
-	  	-ms-flex-item-align: start;
-	  	align-self: $value;
-	  }@else if $value == 'flex-end'{
-	  	-webkit-align-self: $value;
-	  	-ms-flex-item-align: end;
-	  	align-self: $value;
-	  }@else{
-	  	-webkit-align-self: $value;
-	  	-ms-flex-item-align: $value;
-	  	align-self: $value;
-	  }
+@mixin align-self($value){
+	@if $value == 'flex-start'{
+		-webkit-align-self: $value;
+		-ms-flex-item-align: start;
+		align-self: $value;
+	}@else if $value == 'flex-end'{
+		-webkit-align-self: $value;
+		-ms-flex-item-align: end;
+		align-self: $value;
+	}@else{
+		-webkit-align-self: $value;
+		-ms-flex-item-align: $value;
+		align-self: $value;
 	}
+}
 </pre>
