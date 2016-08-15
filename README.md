@@ -2,6 +2,8 @@
 These mixins include the broswer specific fallbacks for flexbox.
 
 <strong>Flexbox</strong>
+<hr>
+<pre>.flexbox-class{ @include flexbox(); }</pre>
 <pre>
 // no value needed
 
@@ -12,8 +14,6 @@ These mixins include the broswer specific fallbacks for flexbox.
 	display: -webkit-flex;
 	display: flex;
 }
-
-.flexbox-class{ @include flexbox(); }
 </pre>
 
 <strong>Flex Wrap</strong>
