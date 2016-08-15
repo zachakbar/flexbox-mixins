@@ -16,7 +16,6 @@ Mixin:
 </pre>
 Usage:
 <pre>.flexbox-class{ @include flexbox(); }</pre>
-<br>
 <h4><strong>Flex Wrap</strong></h4>
 Mixin:
 <pre>
@@ -32,7 +31,6 @@ $value: nowrap | wrap | wrap-reverse
 </pre>
 Usage:
 <pre>.flex-wrap{ @include flex-wrap(wrap); }</pre>
-<br>
 <h4><strong>Flex</strong></h4>
 Mixin:
 <pre>
@@ -48,7 +46,6 @@ Mixin:
 </pre>
 Usage:
 <pre>.flex{ @include flex(0 0 auto); }</pre>
-<br>
 <h4><strong>Justify Content</strong></h4>
 Mixin:
 <pre>
@@ -90,7 +87,6 @@ $value: flex-start | flex-end | center | space-between | space-around
 </pre>
 Usage:
 <pre>.justify-content{ @include justify-content(flex-start); }</pre>
-<br>
 <h4><strong>Align Content</strong></h4>
 Mixin:
 <pre>
@@ -122,7 +118,6 @@ $value: flex-start | flex-end | center | space-between | space-around | stretch
 </pre>
 Usage:
 <pre>.align-content{ @include align-content(flex-start); }</pre>
-<br>
 <h4><strong>Align Items</strong></h4>
 Mixin:
 <pre>
@@ -152,7 +147,6 @@ $value: flex-start | flex-end | center | baseline | stretch
 </pre>
 Usage:
 <pre>.align-items{ @include align-items(flex-start); }</pre>
-<br>
 <h4><strong>Align Self</strong></h4>
 Mixin:
 <pre>
