@@ -2,7 +2,7 @@
 These mixins include the broswer specific fallbacks for flexbox.
 
 <h4><strong>Flexbox</strong></h4>
-Mixin:
+<em>Mixin:</em>
 <pre>
 // no value needed
 
@@ -14,7 +14,7 @@ Mixin:
 	display: flex;
 }
 </pre>
-Usage:
+<em>Usage:</em>
 <pre>.flexbox-class{ @include flexbox(); }</pre>
 <h4><strong>Flex Wrap</strong></h4>
 Mixin:
