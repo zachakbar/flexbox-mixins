@@ -14,7 +14,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 }
 </pre>
 <pre>.flexbox-class{ @include flexbox(); }</pre>
-
+<br>
 <strong>Flex Wrap</strong>
 <pre>
 $value: nowrap | wrap | wrap-reverse
@@ -28,7 +28,7 @@ $value: nowrap | wrap | wrap-reverse
 }
 </pre>
 <pre>.flex-wrap{ @include flex-wrap(wrap); }</pre>
-
+<br>
 <strong>Flex</strong>
 <pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
@@ -42,7 +42,7 @@ $value: nowrap | wrap | wrap-reverse
 }
 </pre>
 <pre>.flex{ @include flex(0 0 auto); }</pre>
-
+<br>
 <strong>Justify Content</strong>
 <pre>
 $value: flex-start | flex-end | center | space-between | space-around
@@ -82,7 +82,7 @@ $value: flex-start | flex-end | center | space-between | space-around
 }
 </pre>
 <pre>.justify-content{ @include justify-content(flex-start); }</pre>
-
+<br>
 <strong>Align Content</strong>
 <pre>
 $value: flex-start | flex-end | center | space-between | space-around | stretch
@@ -113,7 +113,7 @@ $value: flex-start | flex-end | center | space-between | space-around | stretch
 
 .align-content{ @include align-content(flex-start); }
 </pre>
-
+<br>
 <strong>Align Items</strong>
 <pre>
 $value: flex-start | flex-end | center | baseline | stretch
@@ -141,7 +141,7 @@ $value: flex-start | flex-end | center | baseline | stretch
 }
 </pre>
 <pre>.align-items{ @include align-items(flex-start); }</pre>
-
+<br>
 <strong>Align Self</strong>
 <pre>
 $value: auto | flex-start | flex-end | center | baseline | stretch
