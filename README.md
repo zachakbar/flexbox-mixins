@@ -12,6 +12,8 @@ These mixins include the broswer specific fallbacks for flexbox.
 	display: -webkit-flex;
 	display: flex;
 }
+
+.flexbox-class{ @include flexbox(); }
 </pre>
 
 <strong>Flex Wrap</strong>
@@ -25,6 +27,8 @@ $value: nowrap | wrap | wrap-reverse
 	-ms-flex-wrap: $value;
 	flex-wrap: $value;
 }
+
+.flex-wrap{ @include flex-wrap(wrap); }
 </pre>
 
 <strong>Flex</strong>
@@ -38,6 +42,8 @@ $value: nowrap | wrap | wrap-reverse
 	-ms-flex:  $values;
 	flex:  $values;
 }
+
+.flex{ @include flex(0 0 auto); }
 </pre>
 
 <strong>Justify Content</strong>
@@ -77,6 +83,8 @@ $value: flex-start | flex-end | center | space-between | space-around
 		justify-content: $value;
 	}
 }
+
+.justify-content{ @include justify-content(flex-start); }
 </pre>
 
 <strong>Align Content</strong>
@@ -106,6 +114,8 @@ $value: flex-start | flex-end | center | space-between | space-around | stretch
 		align-content: $value;
 	}
 }
+
+.align-content{ @include align-content(flex-start); }
 </pre>
 
 <strong>Align Items</strong>
@@ -133,6 +143,8 @@ $value: flex-start | flex-end | center | baseline | stretch
 		align-items: $value;
 	}
 }
+
+.align-items{ @include align-items(flex-start); }
 </pre>
 
 <strong>Align Self</strong>
@@ -154,4 +166,6 @@ $value: auto | flex-start | flex-end | center | baseline | stretch
 		align-self: $value;
 	}
 }
+
+.align-self{ @include align-self(flex-start); }
 </pre>
