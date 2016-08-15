@@ -1,7 +1,7 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
 
-<h4><strong>Flexbox</strong></h4>
+<h3><strong>Flexbox</strong></h3>
 <em>Mixin:</em>
 <pre>
 // no value needed
@@ -16,7 +16,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 </pre>
 <em>Usage:</em>
 <pre>.flexbox-class{ @include flexbox(); }</pre>
-<h4><strong>Flex Wrap</strong></h4>
+<h3><strong>Flex Wrap</strong></h3>
 <em>Mixin:</em>
 <pre>
 $value: nowrap | wrap | wrap-reverse
@@ -31,7 +31,7 @@ $value: nowrap | wrap | wrap-reverse
 </pre>
 <em>Usage:</em>
 <pre>.flex-wrap{ @include flex-wrap(wrap); }</pre>
-<h4><strong>Flex</strong></h4>
+<h3><strong>Flex</strong></h3>
 <em>Mixin:</em>
 <pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
@@ -46,7 +46,7 @@ $value: nowrap | wrap | wrap-reverse
 </pre>
 <em>Usage:</em>
 <pre>.flex{ @include flex(0 0 auto); }</pre>
-<h4><strong>Justify Content</strong></h4>
+<h3><strong>Justify Content</strong></h3>
 <em>Mixin:</em>
 <pre>
 $value: flex-start | flex-end | center | space-between | space-around
@@ -87,7 +87,7 @@ $value: flex-start | flex-end | center | space-between | space-around
 </pre>
 <em>Usage:</em>
 <pre>.justify-content{ @include justify-content(flex-start); }</pre>
-<h4><strong>Align Content</strong></h4>
+<h3><strong>Align Content</strong></h3>
 <em>Mixin:</em>
 <pre>
 $value: flex-start | flex-end | center | space-between | space-around | stretch
@@ -118,7 +118,7 @@ $value: flex-start | flex-end | center | space-between | space-around | stretch
 </pre>
 <em>Usage:</em>
 <pre>.align-content{ @include align-content(flex-start); }</pre>
-<h4><strong>Align Items</strong></h4>
+<h3><strong>Align Items</strong></h3>
 <em>Mixin:</em>
 <pre>
 $value: flex-start | flex-end | center | baseline | stretch
@@ -147,7 +147,7 @@ $value: flex-start | flex-end | center | baseline | stretch
 </pre>
 <em>Usage:</em>
 <pre>.align-items{ @include align-items(flex-start); }</pre>
-<h4><strong>Align Self</strong></h4>
+<h3><strong>Align Self</strong></h3>
 <em>Mixin:</em>
 <pre>
 $value: auto | flex-start | flex-end | center | baseline | stretch
