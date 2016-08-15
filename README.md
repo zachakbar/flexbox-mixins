@@ -13,6 +13,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 	display: flex;
 }
 </pre>
+Usage:
 <pre>.flexbox-class{ @include flexbox(); }</pre>
 <br>
 <strong>Flex Wrap</strong>
