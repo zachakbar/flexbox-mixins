@@ -4,6 +4,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 <strong>Flexbox</strong>
 <pre>
 // no value needed
+
 @mixin flexbox() {
 	display: -webkit-box;
 	display: -moz-box;
