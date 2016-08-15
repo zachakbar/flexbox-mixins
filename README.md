@@ -1,6 +1,7 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
-<hr>
+
+<strong>Flexbox</strong>
 <pre>
 // no value needed
 @mixin flexbox() {
