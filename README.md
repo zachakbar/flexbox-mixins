@@ -1,7 +1,7 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
 
-<strong>Flexbox</strong>
+<h4><strong>Flexbox</strong></h4>
 Mixin:
 <pre>
 // no value needed
@@ -17,7 +17,7 @@ Mixin:
 Usage:
 <pre>.flexbox-class{ @include flexbox(); }</pre>
 <br>
-<strong>Flex Wrap</strong>
+<h4><strong>Flex Wrap</strong></h4>
 Mixin:
 <pre>
 $value: nowrap | wrap | wrap-reverse
@@ -33,7 +33,7 @@ $value: nowrap | wrap | wrap-reverse
 Usage:
 <pre>.flex-wrap{ @include flex-wrap(wrap); }</pre>
 <br>
-<strong>Flex</strong>
+<h4><strong>Flex</strong></h4>
 Mixin:
 <pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
@@ -49,7 +49,7 @@ Mixin:
 Usage:
 <pre>.flex{ @include flex(0 0 auto); }</pre>
 <br>
-<strong>Justify Content</strong>
+<h4><strong>Justify Content</strong></h4>
 Mixin:
 <pre>
 $value: flex-start | flex-end | center | space-between | space-around
@@ -91,7 +91,7 @@ $value: flex-start | flex-end | center | space-between | space-around
 Usage:
 <pre>.justify-content{ @include justify-content(flex-start); }</pre>
 <br>
-<strong>Align Content</strong>
+<h4><strong>Align Content</strong></h4>
 Mixin:
 <pre>
 $value: flex-start | flex-end | center | space-between | space-around | stretch
@@ -123,7 +123,7 @@ $value: flex-start | flex-end | center | space-between | space-around | stretch
 Usage:
 <pre>.align-content{ @include align-content(flex-start); }</pre>
 <br>
-<strong>Align Items</strong>
+<h4><strong>Align Items</strong></h4>
 Mixin:
 <pre>
 $value: flex-start | flex-end | center | baseline | stretch
@@ -153,7 +153,7 @@ $value: flex-start | flex-end | center | baseline | stretch
 Usage:
 <pre>.align-items{ @include align-items(flex-start); }</pre>
 <br>
-<strong>Align Self</strong>
+<h4><strong>Align Self</strong></h4>
 Mixin:
 <pre>
 $value: auto | flex-start | flex-end | center | baseline | stretch
