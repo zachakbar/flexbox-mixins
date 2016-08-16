@@ -1,7 +1,7 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
 
-<h3><strong>Flexbox</strong> - <small><a href="http://www.w3schools.com/cssref/css3_pr_flexbox.asp" target="_blank">W3Schools Docs</a></small></h3>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_flexbox.asp" target="_blank"><strong>Flexbox</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 // no value needed
@@ -16,7 +16,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flexbox(); }</pre>
-<h3><strong>Flex Wrap</strong> - <a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank" style="font-size:14px;">W3Schools Docs</a></h3>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank"><strong>Flex Wrap</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 $value: nowrap|wrap|wrap-reverse|initial|inherit
@@ -31,8 +31,7 @@ $value: nowrap|wrap|wrap-reverse|initial|inherit
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flex-wrap(wrap); }</pre>
-<h3><strong>Flex</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank">W3Schools Docs</a><p>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank"><strong>Flex</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
@@ -48,8 +47,7 @@ $values: flex-grow flex-shrink flex-basis |auto|initial|inherit
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flex(0 0 auto); }</pre>
-<h3><strong>Justify Content</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank">W3Schools Docs</a><p>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank"><strong>Justify Content</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 $value: flex-start|flex-end|center|space-between|space-around|initial|inherit
@@ -90,8 +88,7 @@ $value: flex-start|flex-end|center|space-between|space-around|initial|inherit
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include justify-content(flex-start); }</pre>
-<h3><strong>Align Content</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank">W3Schools Docs</a><p>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank"><strong>Align Content</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
@@ -122,8 +119,7 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include align-content(flex-start); }</pre>
-<h3><strong>Align Items</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank">W3Schools Docs</a><p>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank"><strong>Align Items</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
@@ -152,8 +148,7 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include align-items(flex-start); }</pre>
-<h3><strong>Align Self</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_align-self.asp" target="_blank">W3Schools Docs</a><p>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_align-self.asp" target="_blank"><strong>Align Self</strong></a></h3>
 <em>Mixin:</em>
 <pre>
 $value: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit
