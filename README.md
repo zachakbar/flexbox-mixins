@@ -16,7 +16,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flexbox(); }</pre>
-<h3><strong>Flex Wrap</strong> - <small><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank">W3Schools Docs</a><small></h3>
+<h3><strong>Flex Wrap</strong> - <a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank" style="font-size:14px;">W3Schools Docs</a></h3>
 <em>Mixin:</em>
 <pre>
 $value: nowrap|wrap|wrap-reverse|initial|inherit
