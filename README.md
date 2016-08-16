@@ -1,8 +1,7 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
 
-<h3><strong>Flexbox</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_flexbox.asp" target="_blank">W3Schools Docs</a><p>
+<h3><strong>Flexbox</strong> - <small><a href="http://www.w3schools.com/cssref/css3_pr_flexbox.asp" target="_blank">W3Schools Docs</a></small></h3>
 <em>Mixin:</em>
 <pre>
 // no value needed
@@ -17,8 +16,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flexbox(); }</pre>
-<h3><strong>Flex Wrap</strong></h3>
-<p><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank">W3Schools Docs</a><p>
+<h3><strong>Flex Wrap</strong> - <small><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank">W3Schools Docs</a><small></h3>
 <em>Mixin:</em>
 <pre>
 $value: nowrap|wrap|wrap-reverse|initial|inherit
