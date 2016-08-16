@@ -16,6 +16,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flexbox(); }</pre>
+----------------
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank"><strong>Flex Wrap</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -32,6 +33,7 @@ $value: nowrap|wrap|wrap-reverse|initial|inherit
 <em>Usage:</em>
 <pre>.sample-class{ @include flex-wrap(wrap); }</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank"><strong>Flex</strong></a></h3>
+----------------
 <em>Mixin:</em>
 <pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
@@ -47,6 +49,7 @@ $values: flex-grow flex-shrink flex-basis |auto|initial|inherit
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include flex(0 0 auto); }</pre>
+----------------
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank"><strong>Justify Content</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -88,6 +91,7 @@ $value: flex-start|flex-end|center|space-between|space-around|initial|inherit
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include justify-content(flex-start); }</pre>
+----------------
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank"><strong>Align Content</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -119,6 +123,7 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include align-content(flex-start); }</pre>
+----------------
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank"><strong>Align Items</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -148,6 +153,7 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 </pre>
 <em>Usage:</em>
 <pre>.sample-class{ @include align-items(flex-start); }</pre>
+----------------
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_align-self.asp" target="_blank"><strong>Align Self</strong></a></h3>
 <em>Mixin:</em>
 <pre>
