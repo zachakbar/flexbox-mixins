@@ -15,7 +15,7 @@ These mixins include the broswer specific fallbacks for flexbox.
 }
 </pre>
 <em>Usage:</em>
-<pre>.sample-class{ @include flexbox(); }</pre>
+<pre>.example-class{ @include flexbox(); }</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank"><strong>Flex Wrap</strong></a></h3>
 <em>Mixin:</em>
 <pre>
