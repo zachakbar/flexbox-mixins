@@ -2,6 +2,7 @@
 These mixins include the broswer specific fallbacks for flexbox.
 
 <h3><strong>Flexbox</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_flexbox.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
 // no value needed
@@ -17,9 +18,10 @@ These mixins include the broswer specific fallbacks for flexbox.
 <em>Usage:</em>
 <pre>.sample-class{ @include flexbox(); }</pre>
 <h3><strong>Flex Wrap</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_flex-wrap.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
-$value: nowrap | wrap | wrap-reverse
+$value: nowrap|wrap|wrap-reverse|initial|inherit
 
 @mixin flex-wrap($value){
 	-webkit-box-flex-wrap: $value;
@@ -32,9 +34,11 @@ $value: nowrap | wrap | wrap-reverse
 <em>Usage:</em>
 <pre>.sample-class{ @include flex-wrap(wrap); }</pre>
 <h3><strong>Flex</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
+$values: flex-grow flex-shrink flex-basis |auto|initial|inherit
 
 @mixin flex($values){
 	-webkit-box-flex: $values;
@@ -47,9 +51,10 @@ $value: nowrap | wrap | wrap-reverse
 <em>Usage:</em>
 <pre>.sample-class{ @include flex(0 0 auto); }</pre>
 <h3><strong>Justify Content</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
-$value: flex-start | flex-end | center | space-between | space-around
+$value: flex-start|flex-end|center|space-between|space-around|initial|inherit
 
 @mixin justify-content($value) {
 	@if $value == 'flex-start'{
@@ -88,9 +93,10 @@ $value: flex-start | flex-end | center | space-between | space-around
 <em>Usage:</em>
 <pre>.sample-class{ @include justify-content(flex-start); }</pre>
 <h3><strong>Align Content</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
-$value: flex-start | flex-end | center | space-between | space-around | stretch
+$value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
 
 @mixin align-content($value){
 	@if $value == 'flex-start'{
@@ -119,9 +125,10 @@ $value: flex-start | flex-end | center | space-between | space-around | stretch
 <em>Usage:</em>
 <pre>.sample-class{ @include align-content(flex-start); }</pre>
 <h3><strong>Align Items</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
-$value: flex-start | flex-end | center | baseline | stretch
+$value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
 
 @mixin align-items($value){
 	@if $value == 'flex-start'{
@@ -148,9 +155,10 @@ $value: flex-start | flex-end | center | baseline | stretch
 <em>Usage:</em>
 <pre>.sample-class{ @include align-items(flex-start); }</pre>
 <h3><strong>Align Self</strong></h3>
+<p><a href="http://www.w3schools.com/cssref/css3_pr_align-self.asp" target="_blank">W3Schools Docs</a><p>
 <em>Mixin:</em>
 <pre>
-$value: auto | flex-start | flex-end | center | baseline | stretch
+$value: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit
 	
 @mixin align-self($value){
 	@if $value == 'flex-start'{
