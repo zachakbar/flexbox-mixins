@@ -68,7 +68,7 @@
 		align-content: $value;
 	}@else if $value == 'flex-end'{
 		-webkit-align-content: $value;
-		-ms-flex-line-pack: start;
+		-ms-flex-line-pack: end;
 		align-content: $value;
 	}@else if $value == 'space-between'{
 		-webkit-align-content: $value;
