@@ -1,28 +1,28 @@
 // FLEXBOX MIXINS
 @mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 // nowrap | wrap | wrap-reverse
 @mixin flex-wrap($value){
-  -webkit-box-flex-wrap: $value;
-  -moz-box-flex-wrap: $value;
-  -webkit-flex-wrap: $value;
-  -ms-flex-wrap: $value;
-  flex-wrap: $value;
+	-webkit-box-flex-wrap: $value;
+	-moz-box-flex-wrap: $value;
+	-webkit-flex-wrap: $value;
+	-ms-flex-wrap: $value;
+	flex-wrap: $value;
 }
 
 // Shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
 @mixin flex($values){
-  -webkit-box-flex: $values;
-  -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
+	-webkit-box-flex: $values;
+	-moz-box-flex:  $values;
+	-webkit-flex:  $values;
+	-ms-flex:  $values;
+	flex:  $values;
 }
 
 // flex-start | flex-end | center | space-between | space-around
