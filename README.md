@@ -9,8 +9,8 @@ These mixins include the broswer specific fallbacks for flexbox.
 @mixin flexbox() {
 	display: -webkit-box;
 	display: -moz-box;
-	display: -ms-flexbox;
 	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 }
 </pre>
