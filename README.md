@@ -7,10 +7,8 @@ These mixins include the broswer specific fallbacks for flexbox.
 // no value needed
 
 @mixin flexbox() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -webkit-flex;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 }
 </pre>
@@ -22,10 +20,8 @@ These mixins include the broswer specific fallbacks for flexbox.
 $value: nowrap|wrap|wrap-reverse|initial|inherit
 
 @mixin flex-wrap($value){
-	-webkit-box-flex-wrap: $value;
-	-moz-box-flex-wrap: $value;
-	-webkit-flex-wrap: $value;
 	-ms-flex-wrap: $value;
+	-webkit-flex-wrap: $value;
 	flex-wrap: $value;
 }
 </pre>
@@ -38,10 +34,8 @@ This is shorthand for flex-grow, flex-shrink and optionally flex-basis. Space se
 $values: flex-grow flex-shrink flex-basis |auto|initial|inherit
 
 @mixin flex($values){
-	-webkit-box-flex: $values;
-	-moz-box-flex:  $values;
-	-webkit-flex:  $values;
 	-ms-flex:  $values;
+	-webkit-flex:  $values;
 	flex:  $values;
 }
 </pre>
@@ -55,68 +49,27 @@ $values: flex-grow flex-shrink flex-basis |auto|initial|inherit
 <pre>
 $value: flex-start|flex-end|center|space-between|space-around|initial|inherit
 
-@mixin justify-content($value) {
+@mixin flex-justify-content($value) {
 	@if $value == 'flex-start'{
-		-webkit-box-pack: start;
-		-moz-box-pack: start;
-		-webkit-justify-content: $value;
 		-ms-flex-pack: start;
+		-webkit-justify-content: $value;
 		justify-content: $value;
 	}@else if $value == 'flex-end'{
-		-webkit-box-pack: end;
-		-moz-box-pack: end;
-		-webkit-justify-content: $value;
 		-ms-flex-pack: end;
+		-webkit-justify-content: $value;
 		justify-content: $value;
 	}@else if $value == 'space-between'{
-		-webkit-box-pack: justify;
-		-moz-box-pack: justify;
-		-webkit-justify-content: $value;
 		-ms-flex-pack: justify;
+		-webkit-justify-content: $value;
 		justify-content: $value;
 	}@else if $value == 'space-around'{
-		-webkit-box-pack: justify;
-		-moz-box-pack: justify;
-		-webkit-justify-content: $value;
 		-ms-flex-pack: distribute;
-		justify-content: $value;
-	}@else{
-		-webkit-box-pack: $value;
-		-moz-box-pack: $value;
 		-webkit-justify-content: $value;
-		-ms-flex-pack: $value;
 		justify-content: $value;
-	}
-}
-</pre>
-<em>Usage:</em>
-<pre>.example-class{ @include justify-content(flex-start); }</pre>
-<h3><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank"><strong>Align Content</strong></a></h3>
-<em>Mixin:</em>
-<pre>
-$value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
-
-@mixin align-content($value){
-	@if $value == 'flex-start'{
-		-webkit-align-content: $value;
-		-ms-flex-line-pack: start;
-		align-content: $value;
-	}@else if $value == 'flex-end'{
-		-webkit-align-content: $value;
-		-ms-flex-line-pack: start;
-		align-content: $value;
-	}@else if $value == 'space-between'{
-		-webkit-align-content: $value;
-		-ms-flex-line-pack: justify;
-		align-content: $value;
-	}@else if $value == 'space-around'{
-		-webkit-align-content: $value;
-		-ms-flex-line-pack: distribute;
-		align-content: $value;
 	}@else{
-		-webkit-align-content: $value;
-		-ms-flex-line-pack: $value;
-		align-content: $value;
+		-ms-flex-pack: $value;
+		-webkit-justify-content: $value;
+		justify-content: $value;
 	}
 }
 </pre>
@@ -127,25 +80,50 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 <pre>
 $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
 
-@mixin align-items($value){
+@mixin flex-align-items($value){
 	@if $value == 'flex-start'{
-		-webkit-box-align: start;
-		-moz-box-align: start;
-		-webkit-align-items: $value;
 		-ms-flex-align: start;
+		-webkit-align-items: $value;
 		align-items: $value;
 	}@else if $value == 'flex-end'{
-		-webkit-box-align: end;
-		-moz-box-align: end;
-		-webkit-align-items: $value;
 		-ms-flex-align: end;
+		-webkit-align-items: $value;
 		align-items: $value;
 	}@else{
-		-webkit-box-align: $value;
-		-moz-box-align: $value;
-		-webkit-align-items: $value;
 		-ms-flex-align: $value;
+		-webkit-align-items: $value;
 		align-items: $value;
+	}
+}
+</pre>
+<em>Usage:</em>
+<pre>.example-class{ @include justify-content(flex-start); }</pre>
+<h3><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank"><strong>Align Content</strong></a></h3>
+<em>Mixin:</em>
+<pre>
+$value: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit
+
+@mixin flex-align-content($value){
+	@if $value == 'flex-start'{
+		-ms-flex-line-pack: start;
+		-webkit-align-content: $value;
+		align-content: $value;
+	}@else if $value == 'flex-end'{
+		-ms-flex-line-pack: end;
+		-webkit-align-content: $value;
+		align-content: $value;
+	}@else if $value == 'space-between'{
+		-ms-flex-line-pack: justify;
+		-webkit-align-content: $value;
+		align-content: $value;
+	}@else if $value == 'space-around'{
+		-ms-flex-line-pack: distribute;
+		-webkit-align-content: $value;
+		align-content: $value;
+	}@else{
+		-ms-flex-line-pack: $value;
+		-webkit-align-content: $value;
+		align-content: $value;
 	}
 }
 </pre>
@@ -156,18 +134,18 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 <pre>
 $value: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit
 	
-@mixin align-self($value){
+@mixin flex-align-self($value){
 	@if $value == 'flex-start'{
-		-webkit-align-self: $value;
 		-ms-flex-item-align: start;
+		-webkit-align-self: $value;
 		align-self: $value;
 	}@else if $value == 'flex-end'{
-		-webkit-align-self: $value;
 		-ms-flex-item-align: end;
+		-webkit-align-self: $value;
 		align-self: $value;
 	}@else{
-		-webkit-align-self: $value;
 		-ms-flex-item-align: $value;
+		-webkit-align-self: $value;
 		align-self: $value;
 	}
 }
