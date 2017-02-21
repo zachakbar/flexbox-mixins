@@ -74,7 +74,7 @@ $value: flex-start|flex-end|center|space-between|space-around|initial|inherit
 }
 </pre>
 <em>Usage:</em>
-<pre>.example-class{ @include align-content(flex-start); }</pre>
+<pre>.example-class{ @include flex-align-content(flex-start); }</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_align-items.asp" target="_blank"><strong>Align Items</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -97,7 +97,7 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 }
 </pre>
 <em>Usage:</em>
-<pre>.example-class{ @include justify-content(flex-start); }</pre>
+<pre>.example-class{ @include flex-justify-content(flex-start); }</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank"><strong>Align Content</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -128,7 +128,7 @@ $value: stretch|center|flex-start|flex-end|space-between|space-around|initial|in
 }
 </pre>
 <em>Usage:</em>
-<pre>.example-class{ @include align-items(flex-start); }</pre>
+<pre>.example-class{ @include flex-align-items(flex-start); }</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_align-self.asp" target="_blank"><strong>Align Self</strong></a></h3>
 <em>Mixin:</em>
 <pre>
@@ -151,7 +151,7 @@ $value: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit
 }
 </pre>
 <em>Usage:</em>
-<pre>.example-class{ @include align-self(flex-start); }</pre>
+<pre>.example-class{ @include flex-align-self(flex-start); }</pre>
 
 Suggestions are welcome and appreciated.
 
