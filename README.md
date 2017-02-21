@@ -28,7 +28,7 @@ $value: nowrap|wrap|wrap-reverse|initial|inherit
 <em>Usage:</em>
 <pre>.example-class{ @include flex-wrap(wrap); }</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank"><strong>Flex</strong></a></h3>
-This is shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.
+<p>This is shorthand for flex-grow, flex-shrink and optionally flex-basis. Space separated, in that order.</p>
 <em>Mixin:</em>
 <pre>
 $values: flex-grow flex-shrink flex-basis |auto|initial|inherit
