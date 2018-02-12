@@ -1,6 +1,8 @@
 # SCSS Flexbox Mixins
 These mixins include the broswer specific fallbacks for flexbox.
 
+#### THIS HAS BEEN REMOVED FROM THE BOILERPLATE SINCE WITH ADDITION OF THE AUTOPREFIXER.
+
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_flexbox.asp" target="_blank"><strong>Flexbox</strong></a></h3>
 <em>Mixin:</em>
 <pre>
