@@ -44,6 +44,21 @@ $values: flex-grow flex-shrink flex-basis |auto|initial|inherit
 .example-class-1{ @include flex(1); }
 .example-class-2{ @include flex(0 0 auto); }
 </pre>
+<h3><a href="https://www.w3schools.com/cssref/css3_pr_flex-direction.asp" target="_blank"><strong>Flex Direction</strong></a></h3>
+<em>Mixin:</em>
+<pre>
+$values: row | row-reverse | column | column-reverse
+
+@mixin flex-direction($value){
+	-webkit-flex-direction: $value;
+	-ms-flex-direction: $value;
+	flex-direction: $value;
+}
+</pre>
+<em>Usage:</em>
+<pre>
+.example-class{ @include flex-direction(row-reverse); }
+</pre>
 <h3><a href="http://www.w3schools.com/cssref/css3_pr_justify-content.asp" target="_blank"><strong>Justify Content</strong></a></h3>
 <em>Mixin:</em>
 <pre>
